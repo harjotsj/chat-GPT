@@ -4,6 +4,9 @@ import GPTLogo from "./components/GPTLogo";
 export default function Home() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
   return (
+    <>
+    
+    <div className="max-w-3xl mx-auto py-6 flex font-extrabold text-">Chat GPT <span className="text-grey font-semibold">3.5</span></div>
     <div className="pt-4 pb-32">
       {messages.map((message) => (
         <div
@@ -28,5 +31,6 @@ export default function Home() {
         />
       </form>
     </div>
+    </>
   );
 }
